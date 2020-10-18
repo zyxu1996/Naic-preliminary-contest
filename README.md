@@ -27,15 +27,15 @@
   * Testing command:  
   ```
   sh autorun_test.sh
-  ```
-  * NOTICE: delete the `readme.txt` in folder `results` and `weights` when testing.  
+  ``` 
 5. Ensemble  
+  * The best results in rank A and rank B, you can change the test path in folder `dataset` to get the results of dataset image_A and image_B.
   ```
   sh autorun_ensemble.sh
   ```
 6. Results  
-  * Stored in folder `results`, remember to delete the `readme.txt` file.
+  * Stored in folder `results`
   ```
-  zip -r results.zip results/
+  sh zip.sh
   ```
-  * Compressed to ZIP format.
+  * Compressed to ZIP format. 
