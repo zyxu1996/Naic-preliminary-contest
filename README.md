@@ -33,3 +33,9 @@
   ```
   sh autorun_ensemble.sh
   ```
+6. Results  
+  * Stored in folder `results`, remember to delete the `readme.txt` file.
+  ```
+  zip -r results.zip results/
+  ```
+  * Compressed to ZIP format.
