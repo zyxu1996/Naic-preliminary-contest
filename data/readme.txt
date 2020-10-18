@@ -1,0 +1,1 @@
+把train、image_A、image_B放入该文件夹内
