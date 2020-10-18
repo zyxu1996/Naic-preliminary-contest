@@ -29,6 +29,7 @@
   sh autorun_test.sh
   ``` 
 5. Ensemble  
+  * The best results in rank A and rank B, you can change the test path in folder `dataset` to get the results of dataset image_A and image_B.
   ```
   sh autorun_ensemble.sh
   ```
@@ -37,4 +38,4 @@
   ```
   sh zip.sh
   ```
-  * Compressed to ZIP format.
+  * Compressed to ZIP format. 
