@@ -12,7 +12,7 @@
   ```
 2. Dataset  
   * Download the dataset on [NAIC](https://naic.pcl.ac.cn/frame/2)  
-  * Please put dataset: train, image_A, image_B in upper level directory `../`  
+  * Please put dataset: train, image_A, image_B in folder `data`  
 3. Train  
   * Run this command at the terminal:
   ```
