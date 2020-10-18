@@ -9,7 +9,7 @@ import torch
 
 
 class potsdam(data.Dataset):
-    def __init__(self, base_dir='../train', state='train', mean_std=False):
+    def __init__(self, base_dir='./data', state='train', mean_std=False):
         super(potsdam, self).__init__()
         self.base_dir = base_dir
         self.dataset_dir = self.base_dir
@@ -17,15 +17,15 @@ class potsdam(data.Dataset):
         self.mean_std = mean_std
         if self.state == 'train':
             "RGB"
-            self.image_dir = os.path.join(self.dataset_dir, 'image')
-            self.label_dir = os.path.join(self.dataset_dir, 'label')
+            self.image_dir = os.path.join(self.dataset_dir, 'train/image')
+            self.label_dir = os.path.join(self.dataset_dir, 'train/label')
         elif self.state == 'val':
             "RGB"
-            self.image_dir = os.path.join(self.dataset_dir, 'image')
-            self.label_dir = os.path.join(self.dataset_dir, 'label')
+            self.image_dir = os.path.join(self.dataset_dir, 'train/image')
+            self.label_dir = os.path.join(self.dataset_dir, 'train/label')
         elif self.state == 'test':
-            # self.image_dir = os.path.join('../image_A')
-            self.image_dir = os.path.join('../image_B')
+            # self.image_dir = os.path.join(self.dataset_dir, 'image_A')
+            self.image_dir = os.path.join(self.dataset_dir, 'image_B')
 
         self.filename_list = os.listdir(self.image_dir)
 
