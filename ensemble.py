@@ -17,6 +17,12 @@ from seg_metric import SegmentationMetric
 import cv2
 from mutil_scale_test import MultiEvalModule_Fullimg
 
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+os.environ.setdefault('RANK', '0')
+os.environ.setdefault('WORLD_SIZE', '1')
+os.environ.setdefault('MASTER_ADDR', '127.0.0.1')
+os.environ.setdefault('MASTER_PORT', '29555')
+
 
 def get_world_size():
     if not torch.distributed.is_initialized():
@@ -309,12 +315,6 @@ def test_on_trainset():
 
 
 if __name__ == '__main__':
-    # os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
-    os.environ.setdefault('RANK', '0')
-    os.environ.setdefault('WORLD_SIZE', '1')
-    os.environ.setdefault('MASTER_ADDR', '127.0.0.1')
-    os.environ.setdefault('MASTER_PORT', '29555')
-
     test()
     # test_on_trainset()
 
