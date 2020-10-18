@@ -3,7 +3,8 @@
 
 ## Setting
 * RTX2080Ti × 4
-* Linux
+* Linux  
+* Cuda10.1
 ## Usage
 1. Install packages  
   * The code is tested on python3.5 and torch 1.1.0. (A higher version should be also work)  
