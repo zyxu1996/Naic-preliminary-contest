@@ -1,6 +1,6 @@
 # Naic-preliminary-contest
 ## Introduction
-Rank 3th in the NAIC (National Artificial Intelligence Challenge) preliminary contest.
+Rank 3th in the NAIC 2020(National Artificial Intelligence Challenge) preliminary contest.
 ## Setting
 * RTX2080Ti × 4
 * Linux  
